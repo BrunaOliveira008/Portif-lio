@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main, header, footer {
+    background-color: rgb(252, 226, 211);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+header div {
+    background-image: url(img/Mythara.png);
+    background-size: cover;
+    background-position: center;
+    height: 80px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.divMain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-image: url(img/menu.png);
+    background-size: cover;
+    background-position: center;
+    color: rgb(167, 142, 122);
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1000;
+}
+
+.divMain div {
+    background-color: rgb(131, 103, 88);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+#sobre {
+    display: flex;
+    background-color: rgb(167, 154, 154);
+    color: white;
+    margin-bottom: 35px;
+    padding: 32px 16px;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+#foto {
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 200px;
+    text-align: center;
+}
+
+.foto p {
+    font-size: larger;
+    margin-top: 10px;
+}
+
+.sobremim {
+    display: flex;
+    justify-content: space-around;
+    width: 960px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.sobremim h4 {
+    width: 350px;
+}
+
+#projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0 35px;
+    background-color: rgb(167, 154, 154);
+    text-align: center;
+    padding: 15px 0 15px 200px;
+}
+
+button {
+    background-color: rgb(131, 103, 88);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 50px;
+    width: 350px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(110, 86, 73);
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(216, 183, 122);
+    width: 480px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    padding: 16px;
+    align-content: center;
+}
+
+.texto {
+    width: 72%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.projeto {
+    margin-bottom: 15px;
+    height: 275px;
+}
+
+#contatos {
+    margin-top: 15px;
+    text-align: center;
+    padding: 15px 0 15px 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+#contatos img {
+    max-width: 100%;
+    margin-top: 40px;
+    height: auto;
+}
+
+footer {
+    background-color: rgb(100, 78, 65);
+    text-align: center;
+    padding: 15px 0 15px 200px;
+}
+
+.entreEmContato {
+    display: flex;
+    width: 960px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 12px;
+    background-color: #8a6e58;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #7b5b46;
+}
+
+form textarea {
+    height: 100px;
+}
+
+#error-message {
+    color: red;
+    font-size: 14px;
+}

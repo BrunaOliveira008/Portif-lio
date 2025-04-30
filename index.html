@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfólio</title>
+</head>
+<body>
+    <header>
+        <div></div>
+    </header>
+
+    <main>
+        <nav class="divMain">
+            <a href="#sobreMim"><div>Sobre mim</div></a>
+            <a href="#projetos"><div>Projetos</div></a>
+            <a href="#contatos"><div>Contatos</div></a>
+        </nav>
+
+        <section id="sobreMim">
+            <h1>Sobre mim</h1>
+            <div id="sobre">
+                <div class="foto">
+                    <img src="img/perfil.jpg" id="foto" alt="Foto de perfil" />
+                    <p><strong>Bruna Martins Oliveira Campos</strong></p>
+                    <img src="img/icons/sei.png" width="300" alt="Logo SEI" />
+                </div>
+
+                <div class="sobremim">
+                    <h4>
+                        Sou formada em Desenvolvimento de Sistemas, com conhecimentos sólidos em programação, desenvolvimento web, banco de dados e metodologias ágeis. Durante a formação, participei de projetos que exigiram raciocínio lógico, trabalho em equipe e foco em soluções eficientes e escaláveis. Tenho paixão por tecnologia, aprendizado contínuo e estou em busca de oportunidades para aplicar minhas habilidades em ambientes inovadores, colaborando com times e contribuindo para o crescimento de produtos e negócios.
+                    </h4>
+                    <h4>
+                        <ul>
+                            <li>Estudo no Sesi</li>
+                            <br />
+                            <li>Faço curso Técnico de ADS, no Senai</li>
+                        </ul>
+                    </h4>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h1>Projetos</h1>
+
+            <div class="box">
+                <img src="img/quiz.png" class="projeto" alt="Quiz Mythara" />
+                <h3>Quiz Mythara</h3>
+                <div class="texto">
+                    <p>Quiz criado para um RPG, onde os jogadores descobrem sua classe dentro de um sistema criado especialmente para esse universo.</p>
+                    <a href="https://bru008.github.io/Quiz-Mythara/" target="_blank"><button>Abrir site</button></a>
+                    <a href="https://github.com/BrunaOliveira008/Quiz-Mythara" target="_blank"><button>Ver repositório</button></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/RADIANCE.png" class="projeto" alt="Radiance" />
+                <h3>Radiance</h3>
+                <div class="texto">
+                    <p>Primeiro grande site criado no início do curso, utilizado para demonstrar habilidades em design front-end.</p>
+                    <a href="https://brunaoliveira008.github.io/Radiance/" target="_blank"><button>Abrir site</button></a>
+                    <a href="https://github.com/BrunaOliveira008/Radiance" target="_blank"><button>Ver repositório</button></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/lojaPerfume.png" class="projeto" alt="Loja de Perfume" />
+                <h3>Loja de Perfume</h3>
+                <div class="texto">
+                    <p>Projeto demonstrando consumo de API's, incluindo APIs próprias e de conversão monetária.</p>
+                    <a href="https://brunaoliveira008.github.io/Loja-Perfume/" target="_blank"><button>Abrir site</button></a>
+                    <a href="https://github.com/BrunaOliveira008/Loja-Perfume" target="_blank"><button>Ver repositório</button></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/chat.png" class="projeto" alt="Chat Fake" />
+                <h3>Chat Fake</h3>
+                <div class="texto">
+                    <p>Chat fake inspirado no Instagram, criado para testar integração com Socket.io.</p>
+                    <a href="https://chatfake-rsy0.onrender.com" target="_blank"><button>Abrir site</button></a>
+                    <a href="https://github.com/BrunaOliveira008/Chat-Fake" target="_blank"><button>Ver repositório</button></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contatos">
+            <h1>Contatos</h1>
+
+            <div>
+                <a aria-label="Chat on WhatsApp" href="https://wa.me/+5511988978613">
+                    <img alt="Chat on WhatsApp" src="img/icons/whatsapp.png" width="60px"/>
+                </a>
+
+                <a href="https://github.com/BrunaOliveira008" target="_blank"> <img src="img/icons/github.png" width="60px"> </a>
+        </div>
+            
+
+            <div class="entreEmContato">
+                <h2>Entre em contato</h2>
+                <form id="formContato">
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required />
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                    <p id="error-message" style="color: red; display: none;"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h2>Direitos reservados a eu</h2>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
